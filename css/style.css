@@ -17,8 +17,8 @@ body, input, textarea, button {
 }
 
 body {
-  color: var(--dark);
   background: var(--light);
+  color: var(--dark);
   line-height: 1.6;
 }
 
@@ -34,7 +34,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  padding: 1rem;
+  padding: 1rem 0;
+}
+
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,6 +59,10 @@ header nav a {
   font-weight: bold;
 }
 
+header nav a:hover {
+  color: var(--primary);
+}
+
 .hero {
   background: var(--primary);
   color: white;
@@ -74,7 +81,7 @@ header nav a {
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 }
 
 .alt {
@@ -82,8 +89,8 @@ header nav a {
 }
 
 .section h2 {
-  margin-bottom: 1.5rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .project-grid {
@@ -96,7 +103,12 @@ header nav a {
   background: white;
   padding: 1rem;
   border-radius: var(--radius);
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 form {
@@ -111,25 +123,35 @@ input, textarea {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: var(--radius);
+  font-size: 1rem;
 }
 
 textarea {
   height: 150px;
+  resize: vertical;
 }
 
 .btn {
   background: var(--primary);
   color: white;
   border: none;
-  padding: 0.75rem;
-  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
   border-radius: var(--radius);
+  cursor: pointer;
   transition: background 0.3s;
 }
 
 .btn:hover {
   background: #005fcc;
+}
+
+#formMsg {
+  text-align: center;
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
 }
 
 footer {
@@ -138,15 +160,23 @@ footer {
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
+  margin-top: 2rem;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   header nav ul {
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
+    padding-top: 1rem;
   }
 
   .hero h2 {
     font-size: 2rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }
