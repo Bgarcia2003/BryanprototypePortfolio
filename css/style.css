@@ -147,6 +147,7 @@ textarea {
   background: #005fcc;
 }
 
+/* Changed from .formMsg to #formMsg to match your HTML id */
 #formMsg {
   text-align: center;
   margin-top: 1rem;
