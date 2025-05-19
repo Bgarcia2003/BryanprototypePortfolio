@@ -2,84 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bryan Garcia Diaz | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bryan Garcia-Diaz Portfolio</title>
+
+  <!-- Main styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>Bryan Garcia Diaz</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#videos">Videos</a>
+    <a href="#photography">Photography</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <header class="hero">
+    <h1>Bryan Garcia-Diaz</h1>
+    <p>Web Designer • Video Editor • Multimedia Artist</p>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container">
-        <h2>Hello, I'm Bryan Garcia Diaz</h2>
-        <p>Graphic Designer • Video Editor • Multimedia Designer</p>
-        <a href="#projects" class="btn">View My Work</a>
-      </div>
-    </section>
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img
+      class="profile-pic"
+      src="https://scontent.fcps4-1.fna.fbcdn.net/v/t1.6435-9/83308259_1428228554045759_8975885099157422080_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=cU-QG4Bvi0kQ7kNvwGgvpSb&_nc_oc=Adla-QduiDdEftYcjraGE0wbAiqRAPjfbczOGx1PKwscalxfC4QcrKqIIhl8deYozWEvBOsLat-NHSVH4JOHbTG9&_nc_zt=23&_nc_ht=scontent.fcps4-1.fna&_nc_gid=Dts93PAN-afcAFjPhl9TDA&oh=00_AfLVG8TySef2SkOICTJsYBPkn-S4FhgguY22VUPFE6Svgg&oe=68517FE4"
+      alt="Bryan Garcia-Diaz"
+    />
+    <p>I create clean, modern web designs and love building digital experiences.</p>
+    <p>First-generation college student studying Graphic & Multimedia Design at COS.</p>
+  </section>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <h3>Branding Project</h3>
-            <p>A visual identity package for a small business.</p>
-          </div>
-          <div class="project-card">
-            <h3>Video Edit</h3>
-            <p>Promotional video edited using Premiere Pro and After Effects.</p>
-          </div>
-          <div class="project-card">
-            <h3>Web Design</h3>
-            <p>Responsive website for a creative agency.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section alt">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          I'm a passionate creative with experience in graphic design, video editing, and front-end web development.
-          I bring ideas to life through thoughtful design, storytelling, and clean code.
-        </p>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-        <p id="formMsg"></p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Bryan Garcia Diaz. Portfolio built with HTML, CSS, and minimal JS.</p>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <h2>Design Projects</h2>
+    <p>Here are some of my recent works:</p>
+    <div class="image-gallery">
+      <div class="project-thumb"><img src="https://i.gyazo.com/c7953bedb7aca8ba7252670b87b6c04d.png" alt="Project 1" /></div>
+      <div class="project-thumb"><img src="https://i.gyazo.com/41868e3df81c69d8c08f4b738e34daa5.png" alt="Project 2" /></div>
+      <div class="project-thumb"><img src="https://i.gyazo.com/2478de2fa2b27c975c05fe5ff32d0257.png" alt="Project 3" /></div>
+      <div class="project-thumb"><img src="https://i.gyazo.com/9f69d95fdab6f181ac4903f8b8ee2d0a.png" alt="Project 4" /></div>
     </div>
-  </footer>
+    <p class="upcoming-work-note">
+      More work coming soon!
+      <a href="https://drive.google.com/drive/folders/1--5ZB_4BbAYv_Jv4iMtXVRTubpq5QJZJ?usp=sharing" target="_blank" rel="noopener noreferrer">Check it out here</a>.
+    </p>
+  </section>
 
-  <!-- JavaScript with no script tag (add this inside JS file only if needed) -->
+  <!-- ===== VIDEOS ===== -->
+  <section id="videos">
+    <h2>Video Projects</h2>
+    <p>See the videos I’ve edited for <strong>Lokix19</strong>:</p>
+    <a class="btn" href="https://www.youtube.com/@lokix19/videos" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+  </section>
+
+  <!-- ===== PHOTOGRAPHY ===== -->
+  <section id="photography">
+    <h2>Photography</h2>
+    <p>I also explore creative photography as part of my multimedia work.</p>
+    <div class="photo-gallery">
+      <img src="https://i.gyazo.com/2a939b1103265a2e74477b5171fff48e.jpg" alt="Photography Sample" />
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:bryangarciadiaz3@gmail.com">bryangarciadiaz3@gmail.com</a></p>
+  </section>
+
+  <!-- ===== BACK-TO-TOP BUTTON ===== -->
+  <button id="backToTop" title="Back to top">⬆️</button>
+
+  <!-- Main script -->
+  <script src="script.js"></script>
 </body>
 </html>
